@@ -9,12 +9,20 @@
 }
 
 .main_container {
-  margin: 10px;
+  background-image: url(img/back.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .header {
   text-align: center;
   font-weight: bold;
+}
+
+.header h2 {
+  padding-top: 10px;
+  font-size: 30px;
+  color: #ececec;
 }
 
 /* Container table styling to match Excel */

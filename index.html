@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="header">
+            <h2>Semester GPA</h2>
+        </div>
+        <table class="excel-table">
+            <thead>
+                <!-- Row 1: Credits -->
+                <tr class="trow1">
+                    <th class="text-left font-normal">No. Credit</th>
+                    <td><input type="text" name="" class="numberonly"></td>
+                    <td><input type="text" name="" class="numberonly"></td>
+                    <td><input type="text" name="" class="numberonly"></td>
+                    <td><input type="text" name="" class="numberonly"></td>
+                    <td><input type="text" name="" class="numberonly"></td>
+                    <td><input type="text" name="" class="numberonly"></td>
+                    <td><input type="text" name="" class="numberonly"></td>
+                    <td><input type="text" name="" class="numberonly"></td>
+                    <th class="totalCredit"></th>
+                </tr>
+              <!-- Row 2: Diagonal split & Vertical Course Codes -->
+                <tr class="trow2">
+                    <th class="diagonal-cell">
+                        <span class="top-left">reg. no</span>
+                        <span class="bottom-right">sub. code</span>
+                    </th>
+                    <th class="sub_code">Sub. 1</th>
+                    <th class="sub_code">Sub. 2</th>
+                    <th class="sub_code">Sub. 3</th>
+                    <th class="sub_code">Sub. 4</th>
+                    <th class="sub_code">Sub. 5</th>
+                    <th class="sub_code">Sub. 6</th>
+                    <th class="sub_code">Sub. 7</th>
+                    <th class="sub_code">Sub. 8</th>
+                    <th>GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+              <!-- Row 3: Student ID & Grades -->
+                <tr class="trow3">
+                    <td class="text-left">UWU/sdk/001</td>
+                    <td class="grade"><input type="text" oninput="validateGrade(this)" name="" id="gradea"></td>
+                    <td class="grade"><input type="text" oninput="validateGrade(this)" name="" id=""></td>
+                    <td class="grade"><input type="text" oninput="validateGrade(this)" name="" id=""></td>
+                    <td class="grade"><input type="text" oninput="validateGrade(this)" name="" id=""></td>
+                    <td class="grade"><input type="text" oninput="validateGrade(this)" name="" id=""></td>
+                    <td class="grade"><input type="text" oninput="validateGrade(this)" name="" id=""></td>
+                    <td class="grade"><input type="text" oninput="validateGrade(this)" name="" id=""></td>
+                    <td class="grade"><input type="text" oninput="validateGrade(this)" name="" id=""></td>
+                    <th><div id="semGPA"></div></th>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="mis"></div>
+
+        <div class="submit">
+            <button type="button" id="submitbtn">Calculate</button>
+            <div id="error"></div>
+        </div>
+
+        <div class="tgpa">
+            <table>
+                <tr>
+                    <th>Grade</th>
+                    <th>GPA</th>
+                </tr>
+                <tr>
+                    <td>A+</td>
+                    <td>4.00</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>4.00</td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td>3.70</td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td>3.30</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>3.00</td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td>2.70</td>
+                </tr>
+                <tr>
+                    <td>C+</td>
+                    <td>2.30</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>2.00</td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td>1.70</td>
+                </tr>
+                <tr>
+                    <td>D+</td>
+                    <td>1.30</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>1.00</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <footer class="site-footer">
+                <div class="footer-container">
+    
+                    <div class="footer-section about">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><img src="img/github.png" alt=""> <a href="">github</a></li>
+                            <li><img src="img/facebook.png" alt=""> <a href="">facebook</a></li>
+                            <li><img src="img/tiktok.png" alt=""> <a href="">tiktok</a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="footer-section contact">
+                        <h3>Contact Info</h3>
+                        <p>Email: surangadarshana68@gmail.com</p>
+                        <p>Phone: +94 71 1444 571</p>
+                        <p>Location: Badulla, Sri Lanka</p>
+                    </div>
+                    
+                </div>
+                
+                <!-- Copyright Bar -->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Your Company Name. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <Script src="script.js"></Script>
+</body>
+</html>
